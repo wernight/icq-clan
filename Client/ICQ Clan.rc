@@ -1,0 +1,851 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\ICQ Clan.ico"
+IDI_STATE_NA            ICON    DISCARDABLE     "res\\state_na.ico"
+IDI_STATE_ONLINE        ICON    DISCARDABLE     "res\\state_on.ico"
+IDI_STATE_AWAY          ICON    DISCARDABLE     "res\\state_aw.ico"
+IDI_STATE_BUSY          ICON    DISCARDABLE     "res\\state_bu.ico"
+IDI_STATE_INVISIBLE     ICON    DISCARDABLE     "res\\state_in.ico"
+IDI_STATE_OFFLINE       ICON    DISCARDABLE     "res\\state_of.ico"
+IDI_STATE_WANNAPLAY     ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_PLAYING_HL          ICON    DISCARDABLE     "res\\game_hl.ico"
+IDI_MSG                 ICON    DISCARDABLE     "res\\msg_icon.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LIEN                CURSOR  DISCARDABLE     "res\\lien.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_AVI_WBC             AVI     DISCARDABLE     "res\\WBC.avi"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 334, 212
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ICQ Clan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,248,108,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_1_STATIC,25,90,20,20
+    LTEXT           "ICQ Clan Client v0.62 build %d",IDC_BUILD_TEXT,65,96,
+                    119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000 Werner BEROUX",IDC_2_STATIC,65,109,
+                    119,8
+    LTEXT           "Web :",IDC_3_STATIC,115,129,20,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_WEB_EDIT,149,129,62,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "E-mail :",IDC_4_STATIC,115,145,24,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_EMAIL_EDIT,149,145,65,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "ICQ :",IDC_5_STATIC,115,161,17,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_ICQ_EDIT,149,161,65,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    CTEXT           "Special greetings to NBS.  He started to make an ICQ like program in VB and without him I would never had the idea to make ICQ Clan.",
+                    IDC_STATIC,7,183,320,22,0,WS_EX_STATICEDGE
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",WS_BORDER | 
+                    WS_TABSTOP,54,129,46,42
+    CONTROL         "Animate2",IDC_ANIMATE2,"SysAnimate32",ACS_TRANSPARENT | 
+                    WS_TABSTOP,7,7,320,74
+    LTEXT           "ICQ Clan v0.63",IDC_STATIC,65,84,49,8,SS_NOPREFIX
+END
+
+IDD_ICQCLAN_DIALOG DIALOGEX 0, 0, 104, 100
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_TOOLWINDOW
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_STATUS_COMBO,39,86,64,122,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Add clan",IDC_ADD_BUTTON,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,1,68,49,14
+    CONTROL         "System",IDC_SYS_BUTTON,"Button",BS_OWNERDRAW | 
+                    WS_DISABLED | WS_TABSTOP,54,68,49,14
+    CONTROL         "ICQ Clan",IDC_MAIN_BUTTON,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,1,86,35,12
+    LTEXT           "",IDC_MENU,1,1,102,64,SS_NOTIFY | WS_BORDER | NOT 
+                    WS_GROUP
+END
+
+IDD_REG_WELCOME DIALOG DISCARDABLE  0, 0, 300, 199
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Welcome"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         171,IDC_STATIC,"Static",SS_BITMAP,7,7,113,185
+    GROUPBOX        "Welcome to ICQ Clan",IDC_STATIC,133,7,160,185
+    LTEXT           "Thank you for using ICQ Clan.\n\n\nNo user ICQ Clan user informations have be found on your computer, so please take a minute to register. This operation is free.",
+                    IDC_STATIC,145,25,138,54
+    LTEXT           "If you are a new ICQ Clan user or if you have lost your old user/password, check ""New user"". Then click on ""Next"".\n\nIf you have a ICQ Clan UIN and your password, check ""Already register"" and click on ""Next"".",
+                    IDC_STATIC,145,85,138,61
+    CONTROL         "New ICQ Clan User",IDC_NEW_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,167,152,80,10
+    CONTROL         "Old ICQ Clan user",IDC_OLD_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,167,168,80,10
+END
+
+IDD_REG_NEW DIALOG DISCARDABLE  0, 0, 300, 199
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "New user"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         171,IDC_STATIC,"Static",SS_BITMAP,7,7,113,185
+    GROUPBOX        "New user informations",IDC_STATIC,133,7,160,185
+    LTEXT           "Please give some information about you. Other ICQ Clan user's will be able to see them except for the password. Enter a password  of your choice that will be used later in ICQ Clan.",
+                    IDC_STATIC,145,33,140,45
+    LTEXT           "Nick :",IDC_STATIC,145,93,20,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NICK_EDIT,201,93,84,13,ES_AUTOHSCROLL
+    LTEXT           "Name :",IDC_STATIC,145,110,24,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME_EDIT,201,110,84,13,ES_AUTOHSCROLL
+    LTEXT           "Firstname :",IDC_STATIC,145,127,36,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIRSTNAME_EDIT,201,127,84,13,ES_AUTOHSCROLL
+    LTEXT           "Password :",IDC_STATIC,145,144,36,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PWD_EDIT,201,144,84,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Confirm pwd :",IDC_STATIC,145,161,48,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PWD2_EDIT,201,161,84,13,ES_PASSWORD | ES_AUTOHSCROLL
+END
+
+IDD_REG_OLD DIALOG DISCARDABLE  0, 0, 300, 199
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Old user"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         171,IDC_STATIC,"Static",SS_BITMAP,7,7,113,185
+    GROUPBOX        "Old user informations",IDC_STATIC,133,7,160,185
+    LTEXT           "You have already a USER and PASSWORD in ICQ Clan, please enter this informations.\n\nIf you have no or have lost your USER or PASSWORD, please go back to register as a new user.",
+                    IDC_STATIC,148,25,131,62
+    LTEXT           "UIN :",IDC_STATIC,186,96,18,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_UIN_EDIT,168,115,80,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Password :",IDC_STATIC,186,140,36,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_OLDPWD_EDIT,168,156,80,14,ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+END
+
+IDD_OLDUSER_DIALOG DIALOGEX 0, 0, 194, 111
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Old user"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Old user informations",IDC_STATIC,7,7,180,72
+    LTEXT           "UIN :",IDC_STATIC,25,28,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_UIN_EDIT,77,28,80,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "Password :",IDC_STATIC,25,47,36,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_OLDPWD_EDIT,77,47,80,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "Finish",IDC_BUTTON2,100,90,54,14
+    PUSHBUTTON      "Back",IDC_BUTTON1,37,90,54,14
+END
+
+IDD_NEWUSER_DIALOG DIALOGEX 0, 0, 194, 149
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "New user"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "New user informations",IDC_STATIC,7,7,180,114
+    LTEXT           "Nick name :",IDC_STATIC,29,19,39,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_NICK_EDIT,81,19,80,14,ES_AUTOHSCROLL
+    LTEXT           "Name :",IDC_STATIC,29,39,24,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME_EDIT,81,39,80,14,ES_AUTOHSCROLL
+    LTEXT           "First name",IDC_STATIC,29,59,33,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIRSTNAME_EDIT,81,59,80,14,ES_AUTOHSCROLL
+    LTEXT           "Password :",IDC_STATIC,29,79,36,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PWD_EDIT,81,79,80,14,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Retype pwd :",IDC_STATIC,29,99,43,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_PWD_EDIT2,81,99,80,14,ES_PASSWORD | ES_AUTOHSCROLL
+    PUSHBUTTON      "Finish",IDC_BUTTON2,100,128,54,14
+    DEFPUSHBUTTON   "Back",IDC_BUTTON1,37,128,54,14
+END
+
+IDD_MYDETAILS_DIALOG DIALOG DISCARDABLE  0, 0, 251, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "My details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Save",IDOK,194,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,194,24,50,14
+    LTEXT           "UIN :",IDC_STATIC,130,85,18,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_UIN_EDIT,178,85,66,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Nick :",IDC_STATIC,130,102,20,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NICK_EDIT,178,102,66,13,ES_AUTOHSCROLL
+    LTEXT           "Name :",IDC_STATIC,130,119,24,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME_EDIT,178,119,66,13,ES_AUTOHSCROLL
+    LTEXT           "Firstname :",IDC_STATIC,130,136,35,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIRSTNAME_EDIT,178,136,66,13,ES_AUTOHSCROLL
+    CONTROL         175,IDC_STATIC,"Static",SS_BITMAP,7,7,120,154
+END
+
+IDD_SEND_DIALOG DIALOG DISCARDABLE  0, 0, 137, 92
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Send a message"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "To :",IDC_GRPBOX_STATIC,2,2,132,23
+    LTEXT           "UIN :",IDC_STATIC,8,10,18,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_UIN_EDIT,29,10,38,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Clan :",IDC_CLAN_STATIC,70,10,19,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLAN_EDIT,90,10,38,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TXT_EDIT,3,32,132,40,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_WANTRETURN
+    DEFPUSHBUTTON   "Send",IDOK,85,76,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,2,76,50,14
+END
+
+IDD_RECEIVE_DIALOG DIALOG DISCARDABLE  0, 0, 206, 137
+STYLE WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Incomming message"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "From :",IDC_GRPBOX_STATIC,2,2,202,25
+    LTEXT           "UIN :",IDC_STATIC,8,10,18,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_UIN_EDIT,29,10,72,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Clan :",IDC_CLAN_STATIC,104,10,19,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_CLAN_EDIT,125,10,73,12,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_TXT_EDIT,2,32,202,84,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_WANTRETURN
+    DEFPUSHBUTTON   "Reply",IDOK,2,121,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,154,121,50,14
+END
+
+IDD_OPTIONS_MENU DIALOG DISCARDABLE  0, 0, 345, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Main Menu"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,7,7,120,154
+    LTEXT           "Slow menu speed :",IDC_STATIC,160,42,61,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MENU_SPEED1_EDIT,248,42,76,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Fast menu speed :",IDC_STATIC,160,63,61,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MENU_SPEED2_EDIT,248,63,76,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Animation Rate :",IDC_STATIC,160,84,61,12,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_MENU_RATE_EDIT,248,84,76,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Close menu on mouse cursor exit",
+                    IDC_MENU_CLOSEONEXIT_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,116,164,12
+END
+
+IDD_OPTIONS_GENERAL DIALOG DISCARDABLE  0, 0, 345, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,7,7,133,154
+    CONTROL         "Always on top",IDC_ALWAYSTOP_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,202,40,60,10
+    GROUPBOX        "ICQ Clan Server",IDC_STATIC,160,75,165,57
+    LTEXT           "Host :",IDC_STATIC,175,89,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_SERVER_EDIT,209,89,101,12,ES_AUTOHSCROLL
+    LTEXT           "Port :",IDC_STATIC,175,109,30,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_PORT_EDIT,209,109,101,12,ES_AUTOHSCROLL | ES_NUMBER
+END
+
+IDD_OPTIONS_SKIN DIALOG DISCARDABLE  0, 0, 345, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Skin"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,7,7,120,154
+    PUSHBUTTON      "Open a skin",IDC_SKIN_BUTTON,257,134,57,14
+    GROUPBOX        "Current skin",IDC_STATIC,160,16,165,108
+    LTEXT           "Name :",IDC_STATIC,171,31,26,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME_EDIT,205,31,109,12,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Autor :",IDC_STATIC,171,45,26,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_AUTOR_EDIT,205,45,109,12,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    EDITTEXT        IDC_NFO_EDIT,171,61,143,54,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_READONLY
+END
+
+IDD_USERDETAILS_DIALOG DIALOG DISCARDABLE  0, 0, 251, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "User details"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,194,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,194,24,50,14
+    LTEXT           "UIN :",-1,130,85,18,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_UIN_EDIT,178,85,66,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER
+    LTEXT           "Nick :",-1,130,102,20,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NICK_EDIT,178,102,66,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Name :",-1,130,119,24,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME_EDIT,178,119,66,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Firstname :",-1,130,136,35,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_FIRSTNAME_EDIT,178,136,66,13,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    CONTROL         175,-1,"Static",SS_BITMAP,7,7,120,154
+END
+
+IDD_OPTIONS_SECURITY DIALOG DISCARDABLE  0, 0, 345, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Security"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,7,7,120,154
+    GROUPBOX        "Change Password :",IDC_STATIC,160,32,164,69
+    LTEXT           "New Password :",IDC_STATIC,191,47,52,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_PWD_EDIT,247,47,69,13,ES_AUTOHSCROLL
+    LTEXT           "Retype New Password :",IDC_STATIC,167,64,75,14,
+                    SS_CENTERIMAGE
+    EDITTEXT        IDC_PWD2_EDIT,247,64,69,14,ES_AUTOHSCROLL
+    CONTROL         "Save Password",IDC_SAVEPWD_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,247,84,69,10
+    CONTROL         "Do not publish my IP adress",IDC_IP_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,196,123,103,10
+END
+
+IDD_ENTERPWD_DIALOG DIALOGEX 0, 0, 219, 47
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "?????"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "???? :",IDC_LBL,18,16,36,12,SS_CENTERIMAGE
+    EDITTEXT        IDC_INPUTSTR_EDIT,71,16,70,12,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    EDITTEXT        IDC_INPUTNUM_EDIT,71,16,70,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    NOT WS_VISIBLE
+    DEFPUSHBUTTON   "OK",IDOK,162,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,162,26,50,14
+END
+
+IDD_OPTIONS_GAME DIALOG DISCARDABLE  0, 0, 345, 167
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Games"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         172,IDC_STATIC,"Static",SS_BITMAP,7,7,120,154
+    GROUPBOX        "Games directory :",IDC_STATIC,160,7,164,153
+    LTEXT           "Half-Life :",IDC_STATIC,170,52,41,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_HL_EDIT,216,52,68,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_HL_BUTTON,285,52,30,13
+    LTEXT           "Quake 3 :",IDC_STATIC,170,91,41,13,SS_CENTERIMAGE
+    EDITTEXT        IDC_Q3_EDIT,216,91,68,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Browse",IDC_Q3_BUTTON,285,91,30,13
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,6,2,0
+ PRODUCTVERSION 0,6,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ICQ Clan MFC Application\0"
+            VALUE "FileVersion", "0, 6, 2, 0\0"
+            VALUE "InternalName", "ICQ Clan\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000 Werner BEROUX\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ICQ Clan.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ICQ Clan Client\0"
+            VALUE "ProductVersion", "0, 6, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 327
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 205
+    END
+
+    IDD_ICQCLAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 103
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_REG_WELCOME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_REG_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 145
+        VERTGUIDE, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_REG_OLD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 293
+        VERTGUIDE, 168
+        VERTGUIDE, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 192
+    END
+
+    IDD_OLDUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_NEWUSER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 187
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 142
+    END
+
+    IDD_MYDETAILS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        VERTGUIDE, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_SEND_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 135
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 90
+        HORZGUIDE, 10
+    END
+
+    IDD_RECEIVE_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 204
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 135
+        HORZGUIDE, 10
+    END
+
+    IDD_OPTIONS_MENU, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        VERTGUIDE, 160
+        VERTGUIDE, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_OPTIONS_GENERAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        VERTGUIDE, 160
+        VERTGUIDE, 175
+        VERTGUIDE, 310
+        VERTGUIDE, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_OPTIONS_SKIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        VERTGUIDE, 160
+        VERTGUIDE, 171
+        VERTGUIDE, 314
+        VERTGUIDE, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_USERDETAILS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 244
+        VERTGUIDE, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_OPTIONS_SECURITY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        VERTGUIDE, 160
+        VERTGUIDE, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_ENTERPWD_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 40
+    END
+
+    IDD_OPTIONS_GAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 338
+        VERTGUIDE, 160
+        VERTGUIDE, 170
+        VERTGUIDE, 216
+        VERTGUIDE, 315
+        VERTGUIDE, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ICQCLAN_DIALOG DLGINIT
+BEGIN
+    IDC_STATUS_COMBO, 0x403, 14, 0
+0x6552, 0x6461, 0x2079, 0x6f74, 0x7020, 0x616c, 0x0079, 
+    IDC_STATUS_COMBO, 0x403, 16, 0
+0x7641, 0x6961, 0x6c62, 0x2f65, 0x6f43, 0x6e6e, 0x6365, 0x0074, 
+    IDC_STATUS_COMBO, 0x403, 5, 0
+0x7741, 0x7961, "\000" 
+    IDC_STATUS_COMBO, 0x403, 10, 0
+0x634f, 0x7563, 0x6970, 0x6572, 0x0064, 
+    IDC_STATUS_COMBO, 0x403, 12, 0
+0x6f4e, 0x2074, 0x7641, 0x6961, 0x6c62, 0x0065, 
+    IDC_STATUS_COMBO, 0x403, 10, 0
+0x6e49, 0x6976, 0x6973, 0x6c62, 0x0065, 
+    IDC_STATUS_COMBO, 0x403, 19, 0
+0x664f, 0x6c66, 0x6e69, 0x2f65, 0x6944, 0x6373, 0x6e6f, 0x656e, 0x7463, 
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Tray menu"
+    BEGIN
+        MENUITEM "&Open ICQ Clan",              ID_OPENICQCLAN
+        MENUITEM "&Minimize ICQ Clan",          ID_MINIMIZEICQCLAN
+        MENUITEM SEPARATOR
+        MENUITEM "&Exit",                       ID_APP_EXIT
+    END
+END
+
+IDR_MAIN_MENU MENU DISCARDABLE 
+BEGIN
+    MENUITEM "Ceate a clan",                ID_MAINMENU_CEATEACLAN
+    POPUP "Clan leader options"
+    BEGIN
+        MENUITEM "Clan Details",                ID_MAINMENU_CLANLEADEROPTIONS_CLANDETAILS
+
+        MENUITEM "Kick a Clan User",            ID_MAINMENU_CLANLEADEROPTIONS_KICKCLANUSER
+
+        MENUITEM "Delete the Clan",             ID_MAINMENU_CLANLEADEROPTIONS_DELETETHECLAN
+
+    END
+    MENUITEM SEPARATOR
+    MENUITEM "View / Change My Details",    ID_MAINMENU_USERINFOS
+    MENUITEM "ICQ Clan Options",            ID_MAINMENU_OPTIONS
+    MENUITEM SEPARATOR
+    POPUP "Help"
+    BEGIN
+        MENUITEM "About",                       ID_MAINMENU_HELP_ABOUT
+    END
+    MENUITEM "Minimize to tray",            ID_MAINMENU_SHUTDOWN
+END
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "User contect menu"
+    BEGIN
+        MENUITEM "Send a message",              ID_USERCONTECTMENU_SENDAMESSAGE
+
+        MENUITEM "Join the game",               ID_USERCONTECTMENU_JOINTHEGAME
+        , GRAYED
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_WIZARD              BITMAP  DISCARDABLE     "res\\Wizard.bmp"
+IDB_OPTIONS             BITMAP  DISCARDABLE     "res\\Options.bmp"
+IDB_MYDETAILS           BITMAP  DISCARDABLE     "res\\My details.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About ICQ Clan..."
+    IDP_SOCKETS_INIT_FAILED "Windows sockets initialization failed."
+    IDS_DEFAULT_SERVEUR     "wernight"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ERRORS              "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+    IDS_OLD_USER_1          "Error 1001: Unable to connect.\nReason: A user with the same UIN is already connected.\nSolution: Please try later."
+    IDS_ADD_CLAN_3          "Congratulation !\nYou are in the clan %s."
+    IDS_ADD_CLAN_4          "Error 1005: Unable to join the clan %s.\nReason: You gave a wrong password.\nSolution: Check the informations and try again."
+    IDS_WRONGPWD_1          "Error 1006: Your password is invalid.\nNext time the password will be asked to you."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ADDCLAN_DIALOG DIALOG DISCARDABLE  0, 0, 228, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Add a clan"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Clan information :",IDC_STATIC,7,7,142,55
+    LTEXT           "Name :",IDC_STATIC,18,19,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_NAME_EDIT,63,19,70,14,ES_AUTOHSCROLL
+    LTEXT           "Clan ID :",IDC_STATIC,18,39,30,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_CIN_EDIT,63,39,70,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,24,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ADDCLAN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ICQ Clan.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_MAINMENU            BITMAP  DISCARDABLE     "res\\Main Menu.bmp"
+IDB_MAINMENU_HELP       BITMAP  DISCARDABLE     "res\\mainmenu.bmp"
+IDB_MAINMENU_ABOUT      BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+IDB_MAINMENU_OPTIONS    BITMAP  DISCARDABLE     "res\\bmp00002.bmp"
+IDB_MAINMENU_USER       BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_MAINMENU_TRAY       BITMAP  DISCARDABLE     "res\\bmp00003.bmp"
+IDB_MAINMENU_DELUSER    BITMAP  DISCARDABLE     "res\\bmp00004.bmp"
+IDB_MAINMENU_DELCLAN    BITMAP  DISCARDABLE     "res\\bmp00005.bmp"
+IDB_MAINMENU_CLANDETAILS BITMAP  DISCARDABLE     "res\\bmp00006.bmp"
+IDB_MAINMENU_LEADER     BITMAP  DISCARDABLE     "res\\bmp00007.bmp"
+IDB_MAINMENU_CREATECLAN BITMAP  DISCARDABLE     "res\\bmp00008.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_AVI_ICQ             AVI     DISCARDABLE     "res\\ICQ.avi"
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ICQ Clan.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

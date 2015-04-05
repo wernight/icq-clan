@@ -1,0 +1,47 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Controleur - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x40c /fo"Debug/Controleur.res" /d "_DEBUG" /d "_AFXDLL" "D:\Mes Documents\Visual C++ 6\ICQ Clan\Controleur\Controleur.rc"" 
+Creating temporary file "D:\TEMP\RSP52B0.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Controleur.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Mes Documents\Visual C++ 6\ICQ Clan\Controleur\ControleurDlg.cpp"
+"D:\Mes Documents\Visual C++ 6\ICQ Clan\Controleur\MainDlg.cpp"
+]
+Creating command line "cl.exe @D:\TEMP\RSP52B0.TMP" 
+Creating temporary file "D:\TEMP\RSP52B1.TMP" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/Controleur.pdb" /debug /machine:I386 /out:"Debug/Controleur.exe" /pdbtype:sept 
+".\Debug\AddClanDlg.obj"
+".\Debug\ClanInfoDlg.obj"
+".\Debug\Controleur.obj"
+".\Debug\ControleurDlg.obj"
+".\Debug\MainDlg.obj"
+".\Debug\SMInputDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UserClansDlg.obj"
+".\Debug\UserInfoDlg.obj"
+".\Debug\Controleur.res"
+]
+Creating command line "link.exe @D:\TEMP\RSP52B1.TMP"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+ControleurDlg.cpp
+MainDlg.cpp
+D:\Mes Documents\Visual C++ 6\ICQ Clan\Controleur\MainDlg.cpp(38) : error C2065: 'IDC_ADDCLAN_BUTTON' : undeclared identifier
+Generating Code...
+Error executing cl.exe.
+
+
+
+<h3>Results</h3>
+Controleur.exe - 1 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Patcher - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "D:\TEMP\RSP2132.TMP" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/Patcher.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\Mes Documents\Visual C++ 6\ICQ Clan\Patcher\Patcher.cpp"
+]
+Creating command line "cl.exe @D:\TEMP\RSP2132.TMP" 
+Creating command line "link.exe /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Patcher.pdb" /debug /machine:I386 /out:"Debug/Patcher.exe" /pdbtype:sept  ".\Debug\Patcher.obj" ".\Debug\StdAfx.obj" ".\Debug\Patcher.res" "
+<h3>Output Window</h3>
+Compiling...
+Patcher.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+Patcher.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

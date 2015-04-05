@@ -1,0 +1,236 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Server.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Server.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 215
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ICQ Clan Server"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Exit",IDCANCEL,178,7,50,14,WS_GROUP
+    PUSHBUTTON      "Hide",IDC_HIDE_BUTTON,178,26,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,13,18,21,20
+    LTEXT           "ICQ Clan Server v0.41 build %d",IDC_BUILD_TEXT,49,20,
+                    119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2000 Werner BEROUX",IDC_STATIC,49,33,119,
+                    8
+    GROUPBOX        "About...",IDC_STATIC,42,48,132,66
+    LTEXT           "Web :",IDC_STATIC,59,63,20,8
+    EDITTEXT        IDC_WEB_EDIT,89,63,61,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "E-mail :",IDC_STATIC,59,79,24,8
+    EDITTEXT        IDC_EMAIL_EDIT,89,79,64,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    LTEXT           "ICQ :",IDC_STATIC,59,95,17,8
+    EDITTEXT        IDC_ICQ_EDIT,89,95,64,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER
+    GROUPBOX        "This Server",IDC_STATIC,7,122,221,86
+    CTEXT           "Thank you for running the server.\nIf you can host for a long time please advise the autor.",
+                    IDC_STATIC,15,132,206,19
+    LTEXT           "Serveur :",IDC_STATIC,18,158,30,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_SERVER_EDIT,67,158,54,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER
+    LTEXT           "Port :",IDC_STATIC,121,158,18,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_PORT_EDIT,165,158,53,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Total users :",IDC_STATIC,121,174,40,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_TOTALUSERS_EDIT,165,174,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Online users :",IDC_STATIC,18,174,44,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_ONLINEUSERS_EDIT,67,174,54,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "Running :",IDC_STATIC,18,189,32,8,SS_CENTERIMAGE
+    LTEXT           "/",IDC_SPEED_STATIC,67,189,8,8
+    LTEXT           "Total clans :",IDC_STATIC,121,189,40,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_TOTALCLANS_EDIT,165,189,40,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | ES_NUMBER | NOT WS_BORDER
+    LTEXT           "ICQ Clan v0.63",IDC_STATIC,49,7,49,8,SS_NOPREFIX
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,4,1,0
+ PRODUCTVERSION 0,6,3,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040c04b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Application MFC Server\0"
+            VALUE "FileVersion", "0, 4, 1, 0\0"
+            VALUE "InternalName", "Server\0"
+            VALUE "LegalCopyright", "Copyright (C) 2000 Werner BEROUX\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Server.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "ICQ Clan Server\0"
+            VALUE "ProductVersion", "0, 6, 3, 0\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x40c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        VERTGUIDE, 18
+        VERTGUIDE, 67
+        VERTGUIDE, 121
+        VERTGUIDE, 165
+        VERTGUIDE, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_LIEN                CURSOR  DISCARDABLE     "res\\lien.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&A propos de Server..."
+    IDP_SOCKETS_INIT_FAILED "Echec de l'initialisation des sockets Windows."
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Server.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
